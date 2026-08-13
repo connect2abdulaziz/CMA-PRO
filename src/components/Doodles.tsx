@@ -145,3 +145,78 @@ export function NoteArrow({ className = "h-10 w-10" }: IconProps) {
     </svg>
   );
 }
+
+export function CompBars({ className = "h-5 w-5" }: IconProps) {
+  return (
+    <svg viewBox="0 0 24 24" fill="none" className={className} aria-hidden>
+      <path
+        d="M6 18V12M12 18V7M18 18v-6"
+        stroke="currentColor"
+        strokeWidth="1.5"
+        strokeLinecap="round"
+      />
+    </svg>
+  );
+}
+
+export function SheetIcon({ className = "h-5 w-5" }: IconProps) {
+  return (
+    <svg viewBox="0 0 24 24" fill="none" className={className} aria-hidden>
+      <path
+        d="M7 4.75h7l3.5 3.5V19.25H7V4.75Z"
+        stroke="currentColor"
+        strokeWidth="1.4"
+        strokeLinejoin="round"
+      />
+      <path d="M14 4.75V8.5h3.5" stroke="currentColor" strokeWidth="1.4" strokeLinejoin="round" />
+      <path
+        d="M10 12.25h4.5M10 15.5h3"
+        stroke="currentColor"
+        strokeWidth="1.4"
+        strokeLinecap="round"
+      />
+    </svg>
+  );
+}
+
+export function HouseIcon({ className = "h-5 w-5" }: IconProps) {
+  return (
+    <svg viewBox="0 0 24 24" fill="none" className={className} aria-hidden>
+      <path
+        d="M4.5 11.5 12 5l7.5 6.5V19.5H4.5V11.5Z"
+        stroke="currentColor"
+        strokeWidth="1.4"
+        strokeLinejoin="round"
+      />
+      <path d="M10 19.5v-5h4v5" stroke="currentColor" strokeWidth="1.4" strokeLinejoin="round" />
+    </svg>
+  );
+}
+
+export function PagesIcon({ className = "h-5 w-5" }: IconProps) {
+  return (
+    <svg viewBox="0 0 24 24" fill="none" className={className} aria-hidden>
+      <rect x="6.5" y="6.5" width="11" height="13" rx="0.6" stroke="currentColor" strokeWidth="1.4" />
+      <path d="M9.25 4.75h11v13" stroke="currentColor" strokeWidth="1.4" strokeLinejoin="round" />
+      <path
+        d="M9.25 11h5M9.25 14.25h3.5"
+        stroke="currentColor"
+        strokeWidth="1.4"
+        strokeLinecap="round"
+      />
+    </svg>
+  );
+}
+
+export function CrescentMoon({ className = "h-5 w-5" }: IconProps) {
+  return (
+    <svg viewBox="0 0 24 24" fill="none" className={className} aria-hidden>
+      <path
+        d="M15.2 4.8A7.8 7.8 0 1 0 19 16.6 6.4 6.4 0 0 1 15.2 4.8Z"
+        stroke="currentColor"
+        strokeWidth="1.4"
+        strokeLinejoin="round"
+      />
+    </svg>
+  );
+}

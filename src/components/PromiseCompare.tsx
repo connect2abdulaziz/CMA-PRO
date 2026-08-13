@@ -1,10 +1,4 @@
-import { Quicksand } from "next/font/google";
 import { CircleCheck, CircleX, FatArrow, NoteArrow, SmileyFace, StarBurst } from "./Doodles";
-
-const round = Quicksand({
-  subsets: ["latin"],
-  weight: ["600", "700"],
-});
 
 const dontPromise = [
   "We will not 10x your business.",
@@ -26,9 +20,7 @@ export function PromiseCompare() {
     <section className="section-rule px-4 py-16 sm:px-5 lg:pl-6 lg:pr-12 lg:py-20">
       <div className="relative mx-auto grid max-w-7xl gap-8 md:grid-cols-2 md:gap-16">
         <article className="relative rounded-[22px] border border-line bg-cream-soft px-8 py-8 pr-12 pb-16 shadow-[0_12px_40px_rgba(13,28,40,0.06)] sm:px-10 sm:pr-16 sm:py-10">
-          <h2
-            className={`${round.className} text-center text-[1.65rem] font-bold leading-snug text-navy sm:text-[1.85rem]`}
-          >
+          <h2 className="text-center font-display text-[1.65rem] font-semibold leading-snug text-navy sm:text-[1.85rem]">
             Things we{" "}
             <span className="hand-underline">don&apos;t</span> promise.
           </h2>
@@ -60,9 +52,7 @@ export function PromiseCompare() {
         </div>
 
         <article className="relative rounded-[22px] border border-line bg-cream-soft px-8 py-8 pr-12 pb-16 shadow-[0_12px_40px_rgba(13,28,40,0.06)] sm:px-10 sm:pr-16 sm:py-10">
-          <h2
-            className={`${round.className} text-center text-[1.65rem] font-bold leading-snug text-navy sm:text-[1.85rem]`}
-          >
+          <h2 className="text-center font-display text-[1.65rem] font-semibold leading-snug text-navy sm:text-[1.85rem]">
             What we <span className="hand-underline">actually</span> built.
           </h2>
 

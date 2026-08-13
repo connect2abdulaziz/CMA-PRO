@@ -1,23 +1,26 @@
 import Image from "next/image";
+import { CompBars, CrescentMoon, HouseIcon, PagesIcon, SheetIcon } from "./Doodles";
 
-const testimonials = [
+const nightSteps = [
   {
-    quote:
-      "I used to bounce between three programs for every CMA. My CMA Pro put everything in one place. Huge time saver and way less error.",
-    name: "Melissa R.",
-    role: "Team Leader",
+    title: "Comp Analysis",
+    desc: "Adjust, analyze, and build your recommendation.",
+    Icon: CompBars,
   },
   {
-    quote:
-      "My presentations look more professional and my sellers notice. It helps me defend my pricing with confidence.",
-    name: "Jordan T.",
-    role: "Listing Specialist",
+    title: "Seller Net Sheet",
+    desc: "Calculate accurate seller proceeds.",
+    Icon: SheetIcon,
   },
   {
-    quote:
-      "I built my own spreadsheet for years. This does everything I was doing—without all the manual work.",
-    name: "Chris B.",
-    role: "Broker",
+    title: "Buyer Worksheet",
+    desc: "Give buyers a clear payment estimate.",
+    Icon: HouseIcon,
+  },
+  {
+    title: "Client-Ready Report",
+    desc: "Polished and ready to present.",
+    Icon: PagesIcon,
   },
 ];
 
@@ -49,17 +52,51 @@ export function EveningStory() {
           </div>
         </div>
 
-        <div className="relative space-y-7 border-t border-gold/35 pt-8 lg:border-l lg:border-t-0 lg:pl-10 lg:pt-0">
+        <div className="relative border-t border-gold/35 pt-8 lg:border-l lg:border-t-0 lg:pl-10 lg:pt-0">
           <span className="absolute left-0 top-1/2 hidden h-2 w-2 -translate-x-1/2 -translate-y-1/2 rounded-full bg-gold lg:block" />
-          {testimonials.map((t) => (
-            <blockquote key={t.name} className="relative pl-1">
-              <span className="font-display text-3xl leading-none text-gold">&ldquo;</span>
-              <p className="mt-1 text-sm leading-relaxed text-navy/80 sm:text-[15px]">{t.quote}</p>
-              <footer className="mt-2 text-sm text-gold">
-                — {t.name}, {t.role}
-              </footer>
-            </blockquote>
-          ))}
+
+          <h3 className="font-display text-2xl leading-snug text-navy sm:text-[1.75rem]">
+            Here&apos;s how the rest of your night goes.
+          </h3>
+
+          <ol className="relative mt-8">
+            <span
+              className="absolute bottom-10 left-[15px] top-2 w-px bg-gold/30"
+              aria-hidden
+            />
+
+            {nightSteps.map((step) => (
+              <li key={step.title} className="relative flex gap-4 pb-7">
+                <div className="relative z-[1] flex h-8 w-8 shrink-0 items-center justify-center rounded-full border border-gold/35 bg-cream text-gold">
+                  <step.Icon className="h-[18px] w-[18px]" />
+                </div>
+                <div className="pt-1">
+                  <p className="text-sm font-semibold text-navy">{step.title}</p>
+                  <p className="mt-1 max-w-[22rem] text-[13px] italic leading-relaxed text-muted">
+                    {step.desc}
+                  </p>
+                </div>
+              </li>
+            ))}
+
+            <li className="relative flex gap-4">
+              <div className="relative z-[1] flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-gold text-cream">
+                <CrescentMoon className="h-[18px] w-[18px]" />
+              </div>
+              <div className="pt-0.5">
+                <p className="font-hand text-[1.35rem] leading-none text-gold sm:text-[1.5rem]">
+                  Done for the night.
+                </p>
+                <p className="mt-1.5 max-w-[22rem] text-[13px] italic leading-relaxed text-muted">
+                  Tomorrow&apos;s listing appointment is ready.
+                </p>
+              </div>
+            </li>
+          </ol>
+
+          <p className="font-hand mt-7 text-lg leading-snug text-navy/55">
+            8:42 p.m. → lights out.
+          </p>
         </div>
       </div>
     </section>
