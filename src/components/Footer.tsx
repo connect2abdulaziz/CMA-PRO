@@ -24,25 +24,22 @@ const columns = [
   {
     title: "PRODUCT",
     links: [
-      { label: "Features", href: "#features" },
-      { label: "How It Works", href: "#how-it-works" },
-      { label: "Pricing", href: "#pricing" },
+      { label: "Features", href: "/#features" },
+      { label: "How It Works", href: "/#how-it-works" },
+      { label: "Pricing", href: "/#pricing" },
     ],
   },
   {
     title: "COMPANY",
     links: [
-      { label: "About", href: "#about" },
-      { label: "Blog", href: "#faq" },
-      { label: "Contact", href: "#faq" },
+      { label: "Blog", href: "/#faq" },
+      { label: "Contact", href: "/help" },
     ],
   },
   {
     title: "RESOURCES",
     links: [
-      { label: "Help Center", href: "#faq" },
-      { label: "Templates", href: "#faq" },
-      { label: "Videos", href: "#faq" },
+      { label: "Help Center", href: "/help" },
     ],
   },
 ];

@@ -39,7 +39,7 @@ export function Hero() {
 
         <div className="animate-fade-up delay-1 relative">
           <Image
-            src="/images/hero-section.jpeg"
+            src="/images/hero-section.png"
             alt="My CMA PRO Comp Analysis on laptop and phone — you choose the comps, make the adjustments, and own the recommendation"
             width={1397}
             height={1126}

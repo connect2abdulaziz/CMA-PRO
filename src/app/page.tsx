@@ -1,7 +1,7 @@
 import { EveningStory } from "@/components/EveningStory";
 import { FAQ } from "@/components/FAQ";
 import { Footer } from "@/components/Footer";
-import { Header } from "@/components/Header";
+import { Header } from "@/components/SiteNav";
 import { Hero } from "@/components/Hero";
 import { Personas } from "@/components/Personas";
 import { Pricing } from "@/components/Pricing";

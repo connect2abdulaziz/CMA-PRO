@@ -146,11 +146,69 @@ export function NoteArrow({ className = "h-10 w-10" }: IconProps) {
   );
 }
 
-export function CompBars({ className = "h-5 w-5" }: IconProps) {
+export function SquareCheck({ className = "h-5 w-5" }: IconProps) {
+  return (
+    <svg
+      viewBox="0 0 24 24"
+      width="24"
+      height="24"
+      fill="none"
+      className={`block ${className}`}
+      aria-hidden
+    >
+      <rect
+        x="3"
+        y="3"
+        width="18"
+        height="18"
+        rx="2"
+        stroke="currentColor"
+        strokeWidth="1.6"
+      />
+      <path
+        d="M7 12.2l3.2 3.2 7-7.4"
+        stroke="#c0822f"
+        strokeWidth="2"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+    </svg>
+  );
+}
+
+export function OutlineStar({ className = "h-5 w-5" }: IconProps) {
+  return (
+    <svg
+      viewBox="0 0 24 24"
+      width="24"
+      height="24"
+      fill="none"
+      className={`block ${className}`}
+      aria-hidden
+    >
+      <path
+        d="M12 3.2l2.35 6.1 6.45.35-5.05 4.15 1.7 6.25L12 16.7 6.55 20.05l1.7-6.25-5.05-4.15 6.45-.35L12 3.2Z"
+        stroke="currentColor"
+        strokeWidth="1.6"
+        strokeLinejoin="round"
+      />
+    </svg>
+  );
+}
+
+export function MonitorChart({ className = "h-5 w-5" }: IconProps) {
   return (
     <svg viewBox="0 0 24 24" fill="none" className={className} aria-hidden>
       <path
-        d="M6 18V12M12 18V7M18 18v-6"
+        d="M3.8 5h16.4v10.4H3.8V5Z"
+        stroke="currentColor"
+        strokeWidth="1.5"
+        strokeLinejoin="round"
+      />
+      <path d="M2.6 16.8h18.8" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" />
+      <path d="M9 19.6h6" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" />
+      <path
+        d="M7.2 13.4V9.8M10.8 13.4V8M14.4 13.4V9.2M17.8 13.4v-2.6"
         stroke="currentColor"
         strokeWidth="1.5"
         strokeLinecap="round"
@@ -159,18 +217,58 @@ export function CompBars({ className = "h-5 w-5" }: IconProps) {
   );
 }
 
-export function SheetIcon({ className = "h-5 w-5" }: IconProps) {
+export function CalculatorIcon({ className = "h-5 w-5" }: IconProps) {
+  return (
+    <svg viewBox="0 0 24 24" fill="none" className={className} aria-hidden>
+      <rect x="5.2" y="3" width="13.6" height="18" rx="1.6" stroke="currentColor" strokeWidth="1.5" />
+      <rect x="7.6" y="5.4" width="8.8" height="3.4" rx="0.4" stroke="currentColor" strokeWidth="1.4" />
+      <circle cx="8.5" cy="12.2" r="0.9" fill="currentColor" />
+      <circle cx="12" cy="12.2" r="0.9" fill="currentColor" />
+      <circle cx="15.5" cy="12.2" r="0.9" fill="currentColor" />
+      <circle cx="8.5" cy="15.4" r="0.9" fill="currentColor" />
+      <circle cx="12" cy="15.4" r="0.9" fill="currentColor" />
+      <circle cx="15.5" cy="15.4" r="0.9" fill="currentColor" />
+      <circle cx="8.5" cy="18.5" r="0.9" fill="currentColor" />
+      <circle cx="12" cy="18.5" r="0.9" fill="currentColor" />
+      <circle cx="15.5" cy="18.5" r="0.9" fill="currentColor" />
+    </svg>
+  );
+}
+
+export function DocHouse({ className = "h-5 w-5" }: IconProps) {
   return (
     <svg viewBox="0 0 24 24" fill="none" className={className} aria-hidden>
       <path
-        d="M7 4.75h7l3.5 3.5V19.25H7V4.75Z"
+        d="M6.8 3.2h7.6L19.4 8.4V20.8H6.8V3.2Z"
+        stroke="currentColor"
+        strokeWidth="1.5"
+        strokeLinejoin="round"
+      />
+      <path d="M14.3 3.2V8.3H19.4" stroke="currentColor" strokeWidth="1.5" strokeLinejoin="round" />
+      <path
+        d="M9.5 17v-3.3l3.5-2.4 3.5 2.4V17h-2.3v-2.1h-2.4V17H9.5Z"
         stroke="currentColor"
         strokeWidth="1.4"
         strokeLinejoin="round"
       />
-      <path d="M14 4.75V8.5h3.5" stroke="currentColor" strokeWidth="1.4" strokeLinejoin="round" />
+    </svg>
+  );
+}
+
+export function DocPie({ className = "h-5 w-5" }: IconProps) {
+  return (
+    <svg viewBox="0 0 24 24" fill="none" className={className} aria-hidden>
       <path
-        d="M10 12.25h4.5M10 15.5h3"
+        d="M6.8 3.2h7.6L19.4 8.4V20.8H6.8V3.2Z"
+        stroke="currentColor"
+        strokeWidth="1.5"
+        strokeLinejoin="round"
+      />
+      <path d="M14.3 3.2V8.3H19.4" stroke="currentColor" strokeWidth="1.5" strokeLinejoin="round" />
+      <circle cx="11.1" cy="14.8" r="2.8" stroke="currentColor" strokeWidth="1.4" />
+      <path d="M11.1 14.8V12A2.8 2.8 0 0 1 13.8 14" stroke="currentColor" strokeWidth="1.4" />
+      <path
+        d="M15.4 13.4h2.4M15.4 15.8h1.8"
         stroke="currentColor"
         strokeWidth="1.4"
         strokeLinecap="round"
@@ -179,40 +277,24 @@ export function SheetIcon({ className = "h-5 w-5" }: IconProps) {
   );
 }
 
-export function HouseIcon({ className = "h-5 w-5" }: IconProps) {
+export function LaptopHeart({ className = "h-5 w-5" }: IconProps) {
   return (
     <svg viewBox="0 0 24 24" fill="none" className={className} aria-hidden>
       <path
-        d="M4.5 11.5 12 5l7.5 6.5V19.5H4.5V11.5Z"
-        stroke="currentColor"
-        strokeWidth="1.4"
-        strokeLinejoin="round"
-      />
-      <path d="M10 19.5v-5h4v5" stroke="currentColor" strokeWidth="1.4" strokeLinejoin="round" />
-    </svg>
-  );
-}
-
-export function PagesIcon({ className = "h-5 w-5" }: IconProps) {
-  return (
-    <svg viewBox="0 0 24 24" fill="none" className={className} aria-hidden>
-      <rect x="6.5" y="6.5" width="11" height="13" rx="0.6" stroke="currentColor" strokeWidth="1.4" />
-      <path d="M9.25 4.75h11v13" stroke="currentColor" strokeWidth="1.4" strokeLinejoin="round" />
-      <path
-        d="M9.25 11h5M9.25 14.25h3.5"
+        d="M12 3.4v1.8M9.2 4.4l.9 1.3M14.8 4.4l-.9 1.3M7.4 6.2l1.2.9M16.6 6.2l-1.2.9"
         stroke="currentColor"
         strokeWidth="1.4"
         strokeLinecap="round"
       />
-    </svg>
-  );
-}
-
-export function CrescentMoon({ className = "h-5 w-5" }: IconProps) {
-  return (
-    <svg viewBox="0 0 24 24" fill="none" className={className} aria-hidden>
       <path
-        d="M15.2 4.8A7.8 7.8 0 1 0 19 16.6 6.4 6.4 0 0 1 15.2 4.8Z"
+        d="M4.6 8h14.8v8.4H4.6V8Z"
+        stroke="currentColor"
+        strokeWidth="1.5"
+        strokeLinejoin="round"
+      />
+      <path d="M3.2 17.8h17.6" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" />
+      <path
+        d="M12 15.3c.4-.85 2.05-1.75 2.05-.2 0 1.15-2.05 2.2-2.05 2.2s-2.05-1.05-2.05-2.2c0-1.55 1.65-.65 2.05.2Z"
         stroke="currentColor"
         strokeWidth="1.4"
         strokeLinejoin="round"
