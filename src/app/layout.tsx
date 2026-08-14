@@ -1,17 +1,11 @@
 import type { Metadata } from "next";
-import { Caveat, Inter } from "next/font/google";
-import localFont from "next/font/local";
+import { Caveat, Inter, Playfair_Display } from "next/font/google";
 import "./globals.css";
 
-const display = localFont({
-  src: [
-    { path: "./fonts/CormorantGaramond-400.woff2", weight: "400", style: "normal" },
-    { path: "./fonts/CormorantGaramond-500.woff2", weight: "500", style: "normal" },
-    { path: "./fonts/CormorantGaramond-600.woff2", weight: "600", style: "normal" },
-    { path: "./fonts/CormorantGaramond-700.woff2", weight: "700", style: "normal" },
-  ],
+const display = Playfair_Display({
   variable: "--font-display",
-  display: "swap",
+  subsets: ["latin"],
+  weight: ["400", "500", "600", "700"],
 });
 
 const body = Inter({
