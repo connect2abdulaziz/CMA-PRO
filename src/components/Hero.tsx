@@ -41,8 +41,8 @@ export function Hero() {
           <Image
             src="/images/hero-section.png"
             alt="My CMA PRO Comp Analysis on laptop and phone — you choose the comps, make the adjustments, and own the recommendation"
-            width={1397}
-            height={1126}
+            width={1536}
+            height={1024}
             priority
             className="h-auto w-full"
           />
